@@ -11,4 +11,4 @@ def home(request):
     return render(request, 'home_application/home.html')
 
 def helloworld(request):
-    render(request, '/home_application/helloworld.html')
+    return render(request, 'home_application/helloworld.html')
