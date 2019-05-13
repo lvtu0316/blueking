@@ -19,5 +19,5 @@ from home_application import views
 
 urlpatterns = (
     url(r'^$', views.home),
-    url(r'helloworld$', views.helloworld),
+    url(r'helloworld$', views.helloworld, name='helloworld'),
 )

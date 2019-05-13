@@ -12,6 +12,15 @@
 {% block content %}
 	<div>
 		<h3>蓝鲸开发框架<small>助力你的自动化</small></h3>
+
+
 	</div>
+    <div>
+        <form action="{% url 'helloworld' %}" method="post">
+            {% csrf_token %}
+            <input type="text" name="text_input">
+            <input type="submit" class="king-btn king-success mr10" value="提交" />
+        </form>
+    </div>
 {% endblock %}
 
