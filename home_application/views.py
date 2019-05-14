@@ -15,7 +15,11 @@ def helloworld(request):
     if request.method == 'GET':
         return render(request, 'home_application/helloworld.html')
     elif request.method == 'POST':
-        text_content = request.POST.get('text_input')
-        return render(request, 'home_application/helloworld.html', locals())
+        text_content = request.POST['text_input']
+        if text_content == "Hello Blueking":
+            return render(request, 'home_application/helloworld.html', locals())
+        else:
+            return render(request, 'home_application/helloworld.html')
+
 
 
