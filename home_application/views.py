@@ -17,9 +17,11 @@ def helloworld(request):
     elif request.method == 'POST':
         text_content = request.POST['text_input']
         if text_content == "Hello Blueking":
+            output = "Congratulation！"
             return render(request, 'home_application/helloworld.html', locals())
         else:
             return render(request, 'home_application/helloworld.html')
 
-
+def index(request):
+    return render(request, 'home_application/index.html')
 
