@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "home_application/base.html" %}
 {% block content %}
 
     <div class="container">
@@ -169,4 +169,88 @@
             </div>
         </div>
     </div>
+{% endblock %}
+{% block javascripts %}
+    <script type="text/javascript">
+        $("#hight-main").kendoChart({
+            legend: {
+                position: "top"
+            },
+            theme: 'bootstrap',
+            categoryAxis: {
+                majorGridLines: {
+                    visible: false
+                },
+                categories: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月']
+            },
+            seriesDefaults: {
+                type: "column" //or bar
+            },
+            series: [{
+                name: '蒸发量',
+                data: [9.0, 12.9, 21.0, 23.2, 25.6, 45.7, 62.6, 75.2, 32.6, 20.0, 9.4, 5.3]
+            }, {
+                name: '降水量',
+                data: [8.6, 16.9, 19.0, 26.4, 28.7, 38.7, 69.6, 73.2, 48.7, 18.8, 10.0, 4.3]
+            }],
+            valueAxis: {
+                max: 100,
+                line: {
+                    visible: false
+                },
+                minorGridLines: {
+                    visible: false
+                },
+                labels: {
+                    rotation: "auto"
+                }
+            },
+            tooltip: {
+                visible: true,
+                template: "#= series.name # #= value #"
+            }
+        });
+
+        $("#chart").kendoChart({
+            title: {
+                text: "某站点用户访问来源"
+            },
+            legend: {
+                position: "top"
+            },
+            theme: 'bootstrap',
+            seriesDefaults: {
+                labels: {
+                    template: "#= category # - #= kendo.format('{0:P}', percentage)#",
+                    position: "outsideEnd",
+                    visible: true,
+                    background: "transparent"
+                }
+            },
+            series: [{
+                type: "pie",
+                data: [{
+                    category: "直接访问",
+                    value: 35
+                }, {
+                    category: "邮件营销",
+                    value: 25
+                }, {
+                    category: "联盟广告",
+                    value: 20
+                }, {
+                    category: "视频广告",
+                    value: 10
+                }, {
+                    category: "搜索引擎",
+                    value: 10
+                }]
+            }],
+            tooltip: {
+                visible: true,
+                template: "#= category # - #= kendo.format('{0:P}', percentage) #"
+            }
+        });
+    </script>
+
 {% endblock %}

@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
+import json
 from django.shortcuts import render
 from django.http import HttpResponseRedirect, HttpResponse
+from  .forms import HostForm
+from .models import Host
 
 
 # 开发框架中通过中间件默认是需要登录态的，如有不需要登录的，可添加装饰器login_exempt
@@ -24,4 +27,20 @@ def helloworld(request):
 
 def index(request):
     return render(request, 'home_application/index.html')
+
+def forms(request):
+    if request.method == 'GET':
+        return render(request, 'home_application/forms.html')
+    elif request.method == 'POST':
+        host_form = HostForm(request.POST)
+        res = dict(result=False)
+        if host_form.is_valid():
+            host_form.save()
+            res['result'] = True
+        return HttpResponse(json.dumps(res), content_type='application/json')
+
+def tables(request):
+    list = Host.objects.all()
+    return render(request, 'home_application/tables.html', locals())
+
 

@@ -21,4 +21,7 @@ urlpatterns = (
     url(r'^$', views.home),
     url(r'helloworld$', views.helloworld, name='helloworld'),
     url(r'index$', views.index, name='index'),
+    url(r'forms$', views.forms, name='forms'),
+    url(r'tables$', views.tables, name='tables'),
+
 )
