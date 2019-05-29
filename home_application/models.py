@@ -13,3 +13,9 @@ class Host(models.Model):
 
     def __str__(self):
         return self.ip
+
+# 相应数据库可以参照
+class DiskUsage(models.Model):
+    value = models.IntegerField('磁盘使用率')
+    add_time = models.DateTimeField('录入时间', auto_now=True)
+    #host = models.ForeignKey(Host, on_delete=models.CASCADE, related_name="DiskUsage") # 如果你没有外键Host注释 这句

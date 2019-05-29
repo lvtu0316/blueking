@@ -23,5 +23,8 @@ urlpatterns = (
     url(r'index$', views.index, name='index'),
     url(r'forms$', views.forms, name='forms'),
     url(r'tables$', views.tables, name='tables'),
+    url(r'get_capacity$', views.get_capacity, name='get_capacity'),
+    url(r'disk_use$', views.disk_use, name='disk_use'),
+    url(r'api_disk_usage$', views.api_disk_usage, name='api_disk_usage'),
 
 )
