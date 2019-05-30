@@ -55,8 +55,8 @@ def tables(request):
 
 
 def get_capacity(request):
-    user = User.objects.get(username='550407948')
-    client = get_client_by_user(user.username)  # 这里是周期任务，不能通过request请求client
+    # user = User.objects.get(username='550407948')
+    client = get_client_by_user('550407948')  # 这里是周期任务，不能通过request请求client
     fast_execute_script_result = fast_execute_script(client)
     # 如果快速脚本调用成功，执行log日志查询，获取执行内容
     if fast_execute_script_result['message'] == 'success':
