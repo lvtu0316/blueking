@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="823a3acc-5780-455d-be65-fe9237fc78d8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/default.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/default.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/dev.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/dev.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home_application/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/home_application/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home_application/templates/home_application/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/home_application/templates/home_application/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home_application/templates/home_application/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home_application/templates/home_application/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home_application/templates/home_application/tables.html" beforeDir="false" afterPath="$PROJECT_DIR$/home_application/templates/home_application/tables.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home_application/templates/home_application/diskuse.html" beforeDir="false" afterPath="$PROJECT_DIR$/home_application/templates/home_application/diskuse.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home_application/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/home_application/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home_application/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home_application/views.py" afterDir="false" />
     </list>
@@ -19,24 +14,45 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/test$celery_beat.coverage" NAME="celery_beat Coverage Results" MODIFIED="1559090760685" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/test$celery_beat.coverage" NAME="celery_beat Coverage Results" MODIFIED="1559101145115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/test$Test__.coverage" NAME="Test:  Coverage Results" MODIFIED="1559023896905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/test$debug.coverage" NAME="debug Coverage Results" MODIFIED="1559024179730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/test$celery_worker.coverage" NAME="celery_worker Coverage Results" MODIFIED="1559090850540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/test$celery_worker.coverage" NAME="celery_worker Coverage Results" MODIFIED="1559101137044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/home_application/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="118" column="4" selection-start-line="118" selection-start-column="4" selection-end-line="118" selection-end-column="4" />
+            <state relative-caret-position="-503">
+              <caret line="128" column="33" selection-start-line="128" selection-start-column="33" selection-end-line="128" selection-end-column="33" />
               <folding>
                 <element signature="e#24#35#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/home_application/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="27" column="10" lean-forward="true" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+              <folding>
+                <element signature="e#584#616#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/home_application/templates/home_application/forms.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="4" column="31" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -54,34 +70,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/django/db/models/manager.py">
+        <entry file="file://$PROJECT_DIR$/home_application/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="201" selection-start-line="201" selection-end-line="201" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/home_application/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="27" column="24" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="24" />
-              <folding>
-                <element signature="e#584#616#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/home_application/templates/home_application/diskuse.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1597">
-              <caret line="76" column="66" selection-start-line="76" selection-start-column="66" selection-end-line="76" selection-end-column="66" />
-              <folding>
-                <element signature="e#125#181#0#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="381">
+              <caret line="20" column="62" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -124,15 +116,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/home_application/templates/home_application/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="217" column="26" selection-start-line="217" selection-start-column="23" selection-end-line="217" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -170,15 +153,16 @@
         <option value="$PROJECT_DIR$/home_application/templates/home_application/forms.html" />
         <option value="$PROJECT_DIR$/config/default.py" />
         <option value="$PROJECT_DIR$/config/dev.py" />
-        <option value="$PROJECT_DIR$/home_application/models.py" />
         <option value="$PROJECT_DIR$/home_application/celery_tasks.py" />
         <option value="$PROJECT_DIR$/home_application/templates/home_application/index.html" />
         <option value="$PROJECT_DIR$/home_application/templates/home_application/base.html" />
         <option value="$PROJECT_DIR$/home_application/templates/home_application/tables.html" />
-        <option value="$PROJECT_DIR$/home_application/urls.py" />
-        <option value="$PROJECT_DIR$/home_application/templates/home_application/diskuse.html" />
         <option value="$PROJECT_DIR$/home_application/tasks.py" />
+        <option value="$PROJECT_DIR$/home_application/templates/home_application/diskuse.html" />
+        <option value="$PROJECT_DIR$/home_application/migrations/0003_diskusage_host.py" />
+        <option value="$PROJECT_DIR$/home_application/models.py" />
         <option value="$PROJECT_DIR$/home_application/views.py" />
+        <option value="$PROJECT_DIR$/home_application/urls.py" />
       </list>
     </option>
   </component>
@@ -215,6 +199,12 @@
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="home_application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="home_application" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
@@ -263,7 +253,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.celery_beat">
+  <component name="RunManager" selected="Django server.test">
     <configuration name="Test: " type="DjangoTestsConfigurationType" temporary="true">
       <module name="test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -403,7 +393,7 @@
       <workItem from="1557795008091" duration="18264000" />
       <workItem from="1557898780497" duration="3857000" />
       <workItem from="1558592325985" duration="599000" />
-      <workItem from="1558922344759" duration="39999000" />
+      <workItem from="1558922344759" duration="55111000" />
     </task>
     <task id="LOCAL-00001" summary="2">
       <created>1557717083579</created>
@@ -421,7 +411,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85426000" />
+    <option name="totallyTimeSpent" value="100538000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -441,7 +431,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3666121" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.27332243" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -450,7 +440,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.41898528" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.26350245" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -648,37 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home_application/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home_application/templates/home_application/forms.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home_application/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="27" column="24" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="24" />
-          <folding>
-            <element signature="e#584#616#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/django/core/handlers/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="190" selection-start-line="190" selection-end-line="190" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home_application/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -712,6 +671,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/home_application/migrations/0003_diskusage_host.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="19" column="44" lean-forward="true" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home_application/templates/home_application/forms.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/logging/handlers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="141" selection-start-line="141" selection-end-line="141" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/django/core/handlers/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="190" selection-start-line="190" selection-end-line="190" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/home_application/celery_tasks.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -724,20 +711,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/home_application/templates/home_application/diskuse.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1597">
-          <caret line="76" column="66" selection-start-line="76" selection-start-column="66" selection-end-line="76" selection-end-column="66" />
+        <state relative-caret-position="324">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
           <folding>
+            <element signature="e#476#675#0#HTML" />
+            <element signature="e#416#445#0#HTML" expanded="true" />
+            <element signature="e#564#584#0#HTML" expanded="true" />
             <element signature="e#125#181#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/home_application/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="20" column="62" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/home_application/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="118" column="4" selection-start-line="118" selection-start-column="4" selection-end-line="118" selection-end-column="4" />
+        <state relative-caret-position="-503">
+          <caret line="128" column="33" selection-start-line="128" selection-start-column="33" selection-end-line="128" selection-end-column="33" />
           <folding>
             <element signature="e#24#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home_application/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="27" column="10" lean-forward="true" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+          <folding>
+            <element signature="e#584#616#0" expanded="true" />
           </folding>
         </state>
       </provider>

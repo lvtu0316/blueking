@@ -8,10 +8,10 @@ from blueking.component.shortcuts import get_client_by_user
 import base64
 import re
 from django.core import serializers
+from blueapps.account.decorators import login_exempt
 import time
 from  .forms import HostForm
 from .models import Host, DiskUsage
-from .tasks import sendmail #引用tasks.py文件的中sendmail方法
 
 
 
@@ -22,7 +22,6 @@ def home(request):
     首页
     """
     # 耗时任务，发送邮件（用delay执行方法）
-    sendmail.delay('test@test.com')
     return render(request, 'home_application/home.html')
 
 def helloworld(request):
@@ -68,7 +67,7 @@ def get_capacity():
         if get_job_instance_log_result['message'] == 'success':
             # 匹配log_content规则
             result = get_job_instance_log_result['data'][0]['step_results'][0]['ip_logs'][0]
-            disk = DiskUsage.objects.create(value=result['log_content'], add_time=result['end_time'])
+            disk = DiskUsage.objects.create(value=result['log_content'], add_time=result['end_time'], host_id=1)
             return HttpResponse(disk, content_type='application/json')
 
         else:
@@ -112,13 +111,32 @@ def disk_use(request):
 
     return render(request, 'home_application/diskuse.html', locals())
 
+@login_exempt
 def api_disk_usage(request):
     """
     磁盘使用率API接口
     """
-    
+    ip = request.GET.get('ip', '')
+    system = request.GET.get('system', '')
+    mounted = request.GET.get('disk', '')
 
-    disk_usages = DiskUsage.objects.all()
+    if ip and system and mounted:
+        disk_usages = DiskUsage.objects.filter(host__ip=ip, host__os=system, host__partition=mounted)
+        if not disk_usages:
+            return JsonResponse({
+                "result": False,
+                "data": [],
+                "message": '查询不存在'
+            })
+
+
+
+    else:
+        return JsonResponse({
+            "result": False,
+            "data": [],
+            "message": '参数不完整'
+        })
     disk_usage_add_time, disk_usage_value = model_data_format(disk_usages)
     data_list ={
 

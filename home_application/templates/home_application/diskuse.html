@@ -1,6 +1,50 @@
 {% extends 'home_application/base.html' %}
 {% block content %}
+<div class="row">
+<!--HTML-->
+<div class="king-block king-block-bordered">
+    <div class="king-block-header king-gray-light">
+        <ul class="king-block-options">
+            <li>
+                <button type="button"><i class="fa fa-cog"></i></button>
+            </li>
+        </ul>
+        <h3 class="king-block-title">填写个人信息</h3>
+    </div>
+    <div class="king-block-content">
+        <form>
+            <div class="form-group">
+                <label for="inputCount3">用户帐号：</label>
+                <input type="text" class="form-control" id="inputCount3" placeholder="昵称/QQ号码/手机号码">
+            </div>
+            <div class="form-group">
+                <label for="inputPassword3">密码：</label>
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="">
+                    <p class="text-primary">6位以上，仅可由数字、字母、下划线组成</p>
+            </div>
+            <div class="form-group">
+                <input type="button" class="king-btn king-success mr10" value="提交" />
+                <input type="reset" class="king-btn king-default" value="取消" />
+            </div>
+        </form>
+    </div>
+</div>
 
+<div class="col-sm-6">
+        <div class="king-block king-block-bordered">
+            <div class="king-block-header king-gray-light">
+                <h3 class="king-block-title">从后台获取，通过数组数据生成</h3>
+            </div>
+            <div class="king-block-content clearfix">
+                <div class="plugin3_demo" id="plugin3_demo2" style="display:inline-block;">
+                    <!-- select2 通过javascript start -->
+                    <input type="hidden" class="select2_box" style="width:300px;">
+                    <!-- select2 通过javascript end -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!--Step:1 为ECharts准备一个具备大小（宽高）的Dom-->
 <div id="chart3_demo" style="height:500px;border:1px solid #ccc;padding:10px;"></div>
 
