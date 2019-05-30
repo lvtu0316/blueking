@@ -17,7 +17,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='diskusage',
             name='host',
-            field=models.ForeignKey(default=django.utils.timezone.now, on_delete=django.db.models.deletion.CASCADE, related_name='DiskUsage', to='home_application.Host'),
+            field=models.ForeignKey(default=1, on_delete=django.db.models.deletion.CASCADE, related_name='DiskUsage', to='home_application.Host'),
             preserve_default=False,
         ),
     ]
