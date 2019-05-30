@@ -12,7 +12,7 @@ from blueapps.account.decorators import login_exempt
 import time
 from  .forms import HostForm
 from .models import Host, DiskUsage
-
+from blueking.component.shortcuts import get_client_by_request
 
 
 # 开发框架中通过中间件默认是需要登录态的，如有不需要登录的，可添加装饰器login_exempt
@@ -155,3 +155,17 @@ def api_disk_usage(request):
         "data": data_list,
         "message": 'ok'
     })
+
+
+def get_usage_data(request):
+    """
+    调用自主接入接口api
+    """
+    if request.method == 'GET':
+        client = get_client_by_request(request)
+        ip = request.GET.get('ip', '')
+        system = request.GET.get('system', '')
+        disk = request.GET.get('disk', '')
+        kwargs = {'ip':ip, 'system':system, 'disk':disk}
+        usage = client.disk_query.get_disk_usage(kwargs)
+        return JsonResponse(usage)
