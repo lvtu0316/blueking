@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="823a3acc-5780-455d-be65-fe9237fc78d8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/home_application/migrations/0003_diskusage_host.py" beforeDir="false" afterPath="$PROJECT_DIR$/home_application/migrations/0003_diskusage_host.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home_application/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/home_application/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/home_application/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
-              <caret line="27" column="54" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="54" />
+              <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
               <folding>
                 <element signature="e#584#616#0" expanded="true" />
               </folding>
@@ -75,7 +75,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/home_application/migrations/0003_diskusage_host.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
@@ -167,8 +167,8 @@
         <option value="$PROJECT_DIR$/home_application/templates/home_application/diskuse.html" />
         <option value="$PROJECT_DIR$/home_application/models.py" />
         <option value="$PROJECT_DIR$/home_application/views.py" />
-        <option value="$PROJECT_DIR$/home_application/urls.py" />
         <option value="$PROJECT_DIR$/home_application/migrations/0003_diskusage_host.py" />
+        <option value="$PROJECT_DIR$/home_application/urls.py" />
       </list>
     </option>
   </component>
@@ -399,7 +399,7 @@
       <workItem from="1557795008091" duration="18264000" />
       <workItem from="1557898780497" duration="3857000" />
       <workItem from="1558592325985" duration="599000" />
-      <workItem from="1558922344759" duration="55968000" />
+      <workItem from="1558922344759" duration="56584000" />
     </task>
     <task id="LOCAL-00001" summary="2">
       <created>1557717083579</created>
@@ -417,7 +417,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101395000" />
+    <option name="totallyTimeSpent" value="102011000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -731,16 +731,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home_application/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="27" column="54" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="54" />
-          <folding>
-            <element signature="e#584#616#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home_application/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
@@ -752,6 +742,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home_application/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+          <folding>
+            <element signature="e#584#616#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
