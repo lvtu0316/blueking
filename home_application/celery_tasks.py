@@ -18,7 +18,7 @@ def get_capacity_task():
     logger.info('disk usage work end')
 
 
-@periodic_task(run_every=datetime.timedelta(seconds=1))
+@periodic_task(run_every=crontab(hour='*/24'))
 def get_disk_periodic():
     """
     获取磁盘使用率周期执行定义
