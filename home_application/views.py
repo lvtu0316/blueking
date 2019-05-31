@@ -157,6 +157,10 @@ def api_disk_usage(request):
     })
 
 
+def usage_data_view(request):
+    return render(request, 'home_application/diskuse.html', locals())
+
+
 def get_usage_data(request):
     """
     调用自主接入接口api

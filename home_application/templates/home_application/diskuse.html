@@ -9,18 +9,22 @@
                 <button type="button"><i class="fa fa-cog"></i></button>
             </li>
         </ul>
-        <h3 class="king-block-title">填写个人信息</h3>
+        <h3 class="king-block-title">填写主机信息</h3>
     </div>
     <div class="king-block-content">
         <form>
             <div class="form-group">
-                <label for="inputCount3">用户帐号：</label>
+                <label for="inputCount3">IP：</label>
                 <input type="text" class="form-control" id="inputCount3" placeholder="昵称/QQ号码/手机号码">
             </div>
             <div class="form-group">
-                <label for="inputPassword3">密码：</label>
+                <label for="inputPassword3">操作系统：</label>
                     <input type="password" class="form-control" id="inputPassword3" placeholder="">
                     <p class="text-primary">6位以上，仅可由数字、字母、下划线组成</p>
+            </div>
+            <div class="form-group">
+                <label for="inputCount3">磁盘：</label>
+                <input type="text" class="form-control" id="inputCount3" placeholder="昵称/QQ号码/手机号码">
             </div>
             <div class="form-group">
                 <input type="button" class="king-btn king-success mr10" value="提交" />
@@ -30,21 +34,7 @@
     </div>
 </div>
 
-<div class="col-sm-6">
-        <div class="king-block king-block-bordered">
-            <div class="king-block-header king-gray-light">
-                <h3 class="king-block-title">从后台获取，通过数组数据生成</h3>
-            </div>
-            <div class="king-block-content clearfix">
-                <div class="plugin3_demo" id="plugin3_demo2" style="display:inline-block;">
-                    <!-- select2 通过javascript start -->
-                    <input type="hidden" class="select2_box" style="width:300px;">
-                    <!-- select2 通过javascript end -->
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
 <!--Step:1 为ECharts准备一个具备大小（宽高）的Dom-->
 <div id="chart3_demo" style="height:500px;border:1px solid #ccc;padding:10px;"></div>
 
@@ -116,13 +106,42 @@ function initEStandLineChart(conf){
         }
     })
 }
-$(function(){
-    initEStandLineChart({
-        url: 'http://appdev.class.o.qcloud.com:8000/api_disk_usage',
-        dataType: 'json',
-        containerId: 'chart3_demo'
-    });
-});
+{#$(function(){#}
+{#    initEStandLineChart({#}
+{#        url: 'http://appdev.class.o.qcloud.com:8000/api_disk_usage',#}
+{#        dataType: 'json',#}
+{#        containerId: 'chart3_demo'#}
+{#    });#}
+{#});#}
 //chart3_demo_js_end
+
+$("#submit-button").addEventListener('click', function () {
+        var ip = $('#host_ip').val();
+        var system = $('#host_system').val();
+        var disk = $('#host_disk').val();
+        console.log(ip, system, disk);
+        let data = {
+            'ip': ip,
+            'system': system,
+            'disk': disk
+        };
+        $.ajax({
+            url: '{{ SITE_URL }}get_capacity/get_usage_data/',
+            data: JSON.stringify(data),
+            type: 'POST',
+            dataType: 'json',
+            success: function (data) {
+                console.log(data);
+                if (data['result']) {
+                    result_data = data['data'][0];
+                    initEStandLineChart({
+                        url: 'http://appdev.class.o.qcloud.com:8000/api_disk_usage',
+                        dataType: 'json',
+                        containerId: 'chart3_demo'
+                    });
+                }
+            }
+        });
+    });
 </script>
 {% endblock %}

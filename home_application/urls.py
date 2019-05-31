@@ -27,4 +27,5 @@ urlpatterns = (
     url(r'disk_use$', views.disk_use, name='disk_use'),
     url(r'get_disk_usage/$', views.api_disk_usage, name='api_disk_usage'),
     url(r'get_usage_data$', views.get_usage_data, name='get_usage_data'),
+    url(r'usage_data_view$', views.usage_data_view, name='usage_data_view'),
 )
